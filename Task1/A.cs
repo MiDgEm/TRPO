@@ -8,5 +8,13 @@ namespace Task1
 {
     class A
     {
+        List<float> arrayResult;
+        public List<float> GetLinearEquation(float a, float b)
+        {
+            if (a == 0)
+                return null;
+
+            return arrayResult = new List<float>() { -b / a };
+        }
     }
 }
