@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nesterenko;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
-    class B : A
+    class QuadraticEquation : LinearEquation, EquationInterface
     {
         protected float GetDisriminant(float a, float b, float c)
         {
@@ -15,7 +16,7 @@ namespace Task1
 
         List<float> arrayResult;
 
-        public List<float> GetRoots(float a, float b, float c)
+        public List<float> Solve(float a, float b, float c)
         {
             if (a == 0)
                 return GetLinearEquation(b, c);

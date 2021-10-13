@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
-    class A
+    class LinearEquation
     {
         List<float> arrayResult;
         public List<float> GetLinearEquation(float a, float b)
