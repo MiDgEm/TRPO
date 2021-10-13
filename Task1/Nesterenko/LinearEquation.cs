@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task1
+namespace Nesterenko
 {
     class LinearEquation
     {
@@ -12,7 +12,9 @@ namespace Task1
         public List<float> GetLinearEquation(float a, float b)
         {
             if (a == 0)
-                return null;
+                throw new NesterenkoException("делить на 0 нельзя");
+
+            NesterenkoLog.I().Log("a = 0. Был вызван метод линейного уравнения");
 
             return arrayResult = new List<float>() { -b / a };
         }

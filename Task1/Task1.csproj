@@ -47,6 +47,7 @@
     <Compile Include="Core\LogAbstract.cs" />
     <Compile Include="Core\LogInterface.cs" />
     <Compile Include="Nesterenko\LinearEquation.cs" />
+    <Compile Include="Nesterenko\NesterenkoExeption.cs" />
     <Compile Include="Nesterenko\NesterenkoLog.cs" />
     <Compile Include="Nesterenko\QuadraticEquation.cs" />
     <Compile Include="Program.cs" />
