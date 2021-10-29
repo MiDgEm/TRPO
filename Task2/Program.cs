@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nesterenko
+namespace Task2
 {
-    interface LogInterface
+    class Program
     {
-        LogInterface Log(string str);
-        LogInterface Write();
+        static void Main(string[] args)
+        {
+
+        }
     }
 }
