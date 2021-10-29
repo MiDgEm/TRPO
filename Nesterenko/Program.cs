@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Nesterenko
 {
     class Program
@@ -20,11 +21,11 @@ namespace Nesterenko
                 float c = float.Parse(Console.ReadLine());
 
                 Console.WriteLine(new string('-', 40));
-
+                
 
                 NesterenkoLog.I().Log($"{a}^2 + {b}x + {c} = 0");
-                NesterenkoLog.I().Log("Корни уравнения: " + string.Join(", ", new QuadraticEquation().Solve(a, b, c)));
-
+                NesterenkoLog.I().Log("Корни уравнения: " + string.Join(", ", new  QuadraticEquation().Solve(a, b, c)));
+                
             }
             catch (NesterenkoException ex)
             {
