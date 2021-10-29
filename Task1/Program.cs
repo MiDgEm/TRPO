@@ -4,40 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nesterenko
+namespace Task1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            try
-            {
-                Console.Write("Введите a: ");
-                float a = float.Parse(Console.ReadLine());
-                Console.Write("Введите b: ");
-                float b = float.Parse(Console.ReadLine());
-                Console.Write("Введите с: ");
-                float c = float.Parse(Console.ReadLine());
-
-                Console.WriteLine(new string('-', 40));
-
-
-                NesterenkoLog.I().Log($"{a}^2 + {b}x + {c} = 0");
-                NesterenkoLog.I().Log("Корни уравнения: " + string.Join(", ", new QuadraticEquation().Solve(a, b, c)));
-
-            }
-            catch (NesterenkoException ex)
-            {
-                NesterenkoLog.I().Log("Ошибка: " + ex.Message);
-            }
-            catch (Exception ex)
-            {
-                NesterenkoLog.I().Log("Ошибка: " + ex.Message);
-            }
-
-            NesterenkoLog.I().Write();
-
-            Console.ReadKey();
+            A a1 = new A();
+            A a2 = new A();
+            B b3 = new B(a2);
+            B b4 = new B(b3);
+            C c5 = new C(a1, b4);
         }
     }
 }

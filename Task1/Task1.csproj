@@ -43,13 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\EquationInterface.cs" />
-    <Compile Include="Core\LogAbstract.cs" />
-    <Compile Include="Core\LogInterface.cs" />
-    <Compile Include="Nesterenko\LinearEquation.cs" />
-    <Compile Include="Nesterenko\NesterenkoExeption.cs" />
-    <Compile Include="Nesterenko\NesterenkoLog.cs" />
-    <Compile Include="Nesterenko\QuadraticEquation.cs" />
+    <Compile Include="A.cs" />
+    <Compile Include="B.cs" />
+    <Compile Include="C.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
